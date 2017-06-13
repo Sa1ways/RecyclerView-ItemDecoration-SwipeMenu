@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshCircleView">
+        <attr name="CircleRadius" format="dimension|reference"/>
+        <attr name="CircleColor" format="color|reference"/>
+        <attr name="CircleWidth" format="dimension|reference"/>
+        <attr name="CircleStartAngle" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasySwipeMenuLayout">
+        <attr name="leftMenuView" format="reference" />
+        <attr name="rightMenuView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="canRightSwipe" format="boolean" />
+        <attr name="canLeftSwipe" format="boolean" />
+        <attr name="fraction" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="style" format="enum">
+            <enum name="left_menu" value="0"/>
+            <enum name="right_menu" value="1"/>
+            <enum name="left_right_menu" value="2"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

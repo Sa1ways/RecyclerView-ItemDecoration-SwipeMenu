@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="MenuButton">
+        <attr name="MenuResource" format="reference"/>
+        <attr name="OptionOneResource" format="reference"/>
+        <attr name="OptionTwoResource" format="reference"/>
+        <attr name="OptionThrResource" format="reference"/>
+        <attr name="ExpandSpeed" format="integer"/>
+    </declare-styleable>
+
+
+</resources>
