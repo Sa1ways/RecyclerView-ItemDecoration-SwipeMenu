@@ -131,8 +131,6 @@ public class TitleItemDecoration extends RecyclerView.ItemDecoration {
 
         String getTitle(int position);
 
-        String getContent(int position);
-
         int getGroupType(int position);
     }
 }

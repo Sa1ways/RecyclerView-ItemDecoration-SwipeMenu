@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity implements
 
     public static final String TAG =MainActivity.class.getSimpleName();
 
-
-
     public static final String TITLES[] = {"group 1","group 2","group 3","group 4","group 5"};
 
     private String[][] mData ={{"A","B","C","D","E"},{"F","G","H","I","J"},
@@ -54,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements
     private void initData() {
         final List<String> data = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            data.add("content"+String.valueOf(i));
+            data.add(mData[i / GROUP_SIZE][i % GROUP_SIZE]);
         }
         mAdapter.showData(data);
     }
@@ -88,12 +86,7 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public String getTitle(int position) {
-        return String.valueOf(position / GROUP_SIZE);
-    }
-
-    @Override
-    public String getContent(int position) {
-        return mData[position / GROUP_SIZE][position % GROUP_SIZE];
+        return TITLES[position / GROUP_SIZE];
     }
 
     @Override
