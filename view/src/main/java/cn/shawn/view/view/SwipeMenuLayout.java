@@ -34,7 +34,7 @@ public class SwipeMenuLayout extends ViewGroup {
 
     private int mLeftMenuWidth, mRightMenuWidth, mContentHeight;
 
-    private float mResistance = 1.5f;
+    private float mResistance = 1.2f;
 
     private int mLastX, mLastY;
 
@@ -139,7 +139,7 @@ public class SwipeMenuLayout extends ViewGroup {
             case MotionEvent.ACTION_MOVE:
                 int dx = (int) Math.abs(ev.getRawX() - mLastX);
                 int dy = (int) Math.abs(ev.getRawY() - mLastY);
-                if( dx > TOUCH_SLOP || dx > dy ){
+                if( dx > 2*TOUCH_SLOP && dx > dy ){
                     requestDisallowInterceptTouchEvent(true);
                     return true;
                 }
